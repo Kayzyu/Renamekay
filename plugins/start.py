@@ -43,7 +43,7 @@ else:
 async def start(client, message):
     old = insert(int(message.chat.id))
     try:
-        id = message.text.split('2118671268')[1]
+        id = message.text.split('34424')[1]
     except:
         txt=f"""Hello {wish} {message.from_user.first_name } \n\n
 	I am file renamer bot, Please sent any telegram**Document Or Video** and enter new filename to rename it"""
