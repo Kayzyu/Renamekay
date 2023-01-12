@@ -8,7 +8,7 @@ from helper.progress import humanbytes
 
 @Client.on_message(filters.private & filters.command(["about"]))
 async def start(client,message):
-	botdata(int(botid))
+	botdata = (int(botid))
 	data = find_one(int(botid))
 	total_rename = data["total_rename"]
 	total_size = data["total_size"]
