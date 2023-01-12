@@ -15,7 +15,7 @@ from helper.database import daily as daily_
 from helper.date import check_expi
 import os
 
-CHANNEL = os.environ.get('CHANNEL', "-1001561165376")
+CHANNEL = os.environ.get('CHANNEL', "wuuukay")
 STRING = os.environ.get("STRING", "")
 ADMIN = int(os.environ.get("ADMIN", 2118671268))
 bot_username = os.environ.get("BOT_USERNAME","RenamerThubnailBot")
@@ -23,7 +23,7 @@ log_channel = int(os.environ.get("LOG_CHANNEL", "-1001561165376"))
 token = os.environ.get('TOKEN', '5979614687:AAHbj6UprKT9hq7jSOSBMS4Ln683EwSEdJg')
 botid = token.split(':')[0]
 FLOOD = 500
-LAZY_PIC = os.environ.get("LAZY_PIC", "")
+LAZY_PIC = os.environ.get("LAZY_PIC", "https://telegra.ph/file/839ea3e992c34f74f8bc0.jpg")
 
 
 # Part of Day --------------------
