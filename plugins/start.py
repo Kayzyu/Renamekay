@@ -16,7 +16,7 @@ from helper.date import check_expi
 import os
 
 CHANNEL = os.environ.get('CHANNEL', "-1001561165376")
-STRING = os.environ.get("STRING", "BQAhIHQAnFZVgxCv4JNP9LKtr8CI4zv18rr9cbwGZN1drv7rEMI-bXJF0y64NNpMD5xeBQFOpNOHloV2Xs30LnxhlWExq2Kil7550NV_Wrp9wtBA6g1yFiuGPWYsgyKYfQN43_ikeHu8ygd0ZoMrs2TsdHtt64iCWAn7ovHkraho-bDTWBzY7Rcb97o0pfRDRpQJQvC9BkbKu_2cMno0QqpURU998MBdBvX4WuRsuQ4W3oKlfxQK77ttJqmzU3xOhspW0WZByiwiRPVNqYyDiBpJOJzg0_q_q3uFC6MhFoIaf2OcwUqkdb_Qnhp636tOueG1PIorp0Pafy8JjwS5rc2xwB8qwQAAAAB-SFukAA")
+STRING = os.environ.get("STRING", "")
 ADMIN = int(os.environ.get("ADMIN", 2118671268))
 bot_username = os.environ.get("BOT_USERNAME","RenamerThubnailBot")
 log_channel = int(os.environ.get("LOG_CHANNEL", "-1001561165376"))
@@ -43,7 +43,7 @@ else:
 async def start(client, message):
     old = insert(int(message.chat.id))
     try:
-        id = message.text.split('34424')[1]
+        id = message.text.split(' ')[1]
     except:
         txt=f"""Hello {wish} {message.from_user.first_name } \n\n
 	I am file renamer bot, Please sent any telegram**Document Or Video** and enter new filename to rename it"""
