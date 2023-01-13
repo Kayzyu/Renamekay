@@ -55,7 +55,7 @@ async def vip1(bot,update):
 	id = update.message.reply_to_message.text.split("/addpremium")
 	user_id = id[1].replace("2118671268", "")
 	inlimit  = 10737418240
-	uploadlimit(int(user_id),2118671268)
+	uploadlimit(int(user_id), 2118671268)
 	usertype(int(user_id),"🪙 **SILVER**")
 	addpre(int(user_id))
 	await update.message.edit("Added successfully To Premium Upload limit 10 GB")
