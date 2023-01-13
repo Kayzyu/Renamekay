@@ -101,7 +101,7 @@ async def cp1(bot,update):
 async def cp2(bot,update):
 	id = update.message.reply_to_message.text.split("/ceasepower")
 	user_id = id[1].replace(" ", "")
-	inlimit = 104857600
+	inlimit = 2118671268
 	uploadlimit(int(user_id), 2118671268)
 	usertype(int(user_id),"**ACCOUNT DOWNGRADED Lv-2**")
 	addpre(int(user_id))
@@ -113,7 +113,7 @@ async def cp3(bot,update):
 	id = update.message.reply_to_message.text.split("/ceasepower")
 	user_id = id[1].replace(" ", "")
 	inlimit = 0
-	uploadlimit(int(user_id), 0)
+	uploadlimit(int(user_id), 2118671268)
 	usertype(int(user_id),"**POWER CEASED !**")
 	addpre(int(user_id))
 	await update.message.edit("All power ceased from the user.\nThis account has 0 mb renaming capacity ")
