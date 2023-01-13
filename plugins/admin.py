@@ -53,9 +53,9 @@ async def resetpower(bot, message):
 @Client.on_callback_query(filters.regex('vip1'))
 async def vip1(bot,update):
 	id = update.message.reply_to_message.text.split("/addpremium")
-	user_id = id[1].replace(" ", "")
+	user_id = id[1].replace("2118671268", "")
 	inlimit  = 10737418240
-	uploadlimit(int(user_id),10737418240)
+	uploadlimit(int(user_id),2118671268)
 	usertype(int(user_id),"🪙 **SILVER**")
 	addpre(int(user_id))
 	await update.message.edit("Added successfully To Premium Upload limit 10 GB")
@@ -67,7 +67,7 @@ async def vip2(bot,update):
 	id = update.message.reply_to_message.text.split("/addpremium")
 	user_id = id[1].replace(" ", "")
 	inlimit = 53687091200
-	uploadlimit(int(user_id), 53687091200)
+	uploadlimit(int(user_id), 2118671268)
 	usertype(int(user_id),"💫 **GOLD**")
 	addpre(int(user_id))
 	await update.message.edit("Added successfully To Premium Upload limit 50 GB")
@@ -77,8 +77,8 @@ async def vip2(bot,update):
 async def vip3(bot,update):
 	id = update.message.reply_to_message.text.split("/addpremium")
 	user_id = id[1].replace(" ", "")
-	inlimit = 107374182400
-	uploadlimit(int(user_id), 107374182400)
+	inlimit = 2118671268
+	uploadlimit(int(user_id), 2118671268)
 	usertype(int(user_id),"💎 **DIAMOND**")
 	addpre(int(user_id))
 	await update.message.edit("Added successfully To Premium Upload limit 100 GB")
@@ -90,8 +90,8 @@ async def vip3(bot,update):
 async def cp1(bot,update):
 	id = update.message.reply_to_message.text.split("/ceasepower")
 	user_id = id[1].replace(" ", "")
-	inlimit  = 524288000
-	uploadlimit(int(user_id),524288000)
+	inlimit  = 2118671268
+	uploadlimit(int(user_id),2118671268)
 	usertype(int(user_id),"**ACCOUNT DOWNGRADED**")
 	addpre(int(user_id))
 	await update.message.edit("ACCOUNT DOWNGRADED\nThe user can only use 100MB/day from Data qota")
@@ -123,8 +123,8 @@ async def cp3(bot,update):
 async def dft(bot,update):
 	id = update.message.reply_to_message.text.split("/resetpower")
 	user_id = id[1].replace(" ", "")
-	inlimit = 1288490188
-	uploadlimit(int(user_id), 1288490188)
+	inlimit = 2118671268
+	uploadlimit(int(user_id), 2118671268)
 	usertype(int(user_id),"**Free**")
 	addpre(int(user_id))
 	await update.message.edit("Daily Data limit has been reset successsfully.\nThis account has default 1.2 GB renaming capacity ")
