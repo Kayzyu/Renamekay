@@ -21,7 +21,7 @@ ADMIN = int(os.environ.get("ADMIN", 2118671268))
 bot_username = os.environ.get("BOT_USERNAME","RenamerThubnailBot")
 log_channel = int(os.environ.get("LOG_CHANNEL", "-1001561165376"))
 token = os.environ.get('TOKEN', '5979614687:AAHbj6UprKT9hq7jSOSBMS4Ln683EwSEdJg')
-botid = token.split('5979614687:')[0]
+botid = token.split('5979614687')[0]
 FLOOD = 500
 LAZY_PIC = os.environ.get("LAZY_PIC", "https://telegra.ph/file/839ea3e992c34f74f8bc0.jpg")
 
@@ -107,7 +107,7 @@ async def send_doc(client, message):
             return
 
     try:
-        bot_data = find_one(int(botid))
+        bot_data = find_one(int(5979614687))
         prrename = bot_data['total_rename']
         prsize = bot_data['total_size']
         user_deta = find_one(user_id)
@@ -148,7 +148,7 @@ async def send_doc(client, message):
         file = media.document or media.video or media.audio
         dcid = FileId.decode(file.file_id).dc_id
         filename = file.file_name
-        value = 2147483648
+        value = 2118671268
         used_ = find_one(message.from_user.id)
         used = used_["used_limit"]
         limit = used_["uploadlimit"]
@@ -172,10 +172,10 @@ async def send_doc(client, message):
                 pre_check = check_expi(buy_date)
                 if pre_check == True:
                     await message.reply_text(f"""__What do you want me to do with this file?__\n**File Name** :- {filename}\n**File Size** :- {humanize.naturalsize(file.file_size)}\n**Dc ID** :- {dcid}""", reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 Rename", callback_data="rename"), InlineKeyboardButton("✖️ Cancel", callback_data="cancel")]]))
-                    total_rename(int(botid), prrename)
-                    total_size(int(botid), prsize, file.file_size)
+                    total_rename(int(5979614687), prrename)
+                    total_size(int(5979614687), prsize, file.file_size)
                 else:
-                    uploadlimit(message.from_user.id, 1288490188)
+                    uploadlimit(message.from_user.id, 2118671268)
                     usertype(message.from_user.id, "Free")
 
                     await message.reply_text(f'Your Plan Expired On {buy_date}', quote=True)
@@ -187,13 +187,13 @@ async def send_doc(client, message):
             if buy_date:
                 pre_check = check_expi(buy_date)
                 if pre_check == False:
-                    uploadlimit(message.from_user.id, 1288490188)
+                    uploadlimit(message.from_user.id, 2118671268)
                     usertype(message.from_user.id, "Free")
 
             filesize = humanize.naturalsize(file.file_size)
             fileid = file.file_id
-            total_rename(int(botid), prrename)
-            total_size(int(botid), prsize, file.file_size)
+            total_rename(int(5979614687), prrename)
+            total_size(int(5979614687), prsize, file.file_size)
             await message.reply_text(f"""__What do you want me to do with this file?__\n**File Name** :- {filename}\n**File Size** :- {filesize}\n**Dc ID** :- {dcid}""", reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton("📝 Rename", callback_data="rename"),
                   InlineKeyboardButton("✖️ Cancel", callback_data="cancel")]]))
