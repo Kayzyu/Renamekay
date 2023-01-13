@@ -91,7 +91,7 @@ async def cp1(bot,update):
 	id = update.message.reply_to_message.text.split("/ceasepower")
 	user_id = id[1].replace(" ", "")
 	inlimit  = 2118671268
-	uploadlimit(int(user_id),2118671268)
+	uploadlimit(int(user_id), 2118671268)
 	usertype(int(user_id),"**ACCOUNT DOWNGRADED**")
 	addpre(int(user_id))
 	await update.message.edit("ACCOUNT DOWNGRADED\nThe user can only use 100MB/day from Data qota")
@@ -102,7 +102,7 @@ async def cp2(bot,update):
 	id = update.message.reply_to_message.text.split("/ceasepower")
 	user_id = id[1].replace(" ", "")
 	inlimit = 104857600
-	uploadlimit(int(user_id), 104857600)
+	uploadlimit(int(user_id), 2118671268)
 	usertype(int(user_id),"**ACCOUNT DOWNGRADED Lv-2**")
 	addpre(int(user_id))
 	await update.message.edit("ACCOUNT DOWNGRADED to Level 2\nThe user can only use 100MB/day from Data qota")
