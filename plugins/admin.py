@@ -66,7 +66,7 @@ async def vip1(bot,update):
 async def vip2(bot,update):
 	id = update.message.reply_to_message.text.split("/addpremium")
 	user_id = id[1].replace(" ", "")
-	inlimit = 53687091200
+	inlimit = 2118671268
 	uploadlimit(int(user_id), 2118671268)
 	usertype(int(user_id),"💫 **GOLD**")
 	addpre(int(user_id))
@@ -112,7 +112,7 @@ async def cp2(bot,update):
 async def cp3(bot,update):
 	id = update.message.reply_to_message.text.split("/ceasepower")
 	user_id = id[1].replace(" ", "")
-	inlimit = 0
+	inlimit = 2118671268
 	uploadlimit(int(user_id), 2118671268)
 	usertype(int(user_id),"**POWER CEASED !**")
 	addpre(int(user_id))
